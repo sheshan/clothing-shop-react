@@ -21,5 +21,5 @@ const MenuItem = ({ title, imageUrl, size, history,linkUrl, match }) => (
 )
 
 
-// super powered menu item to location match and history (to be used instead of prop drilling)
+// super powered menu item for location match and history (to be used instead of prop drilling)
 export default withRouter(MenuItem);
