@@ -13,7 +13,6 @@ const config = {
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
-  console.log("inside createUser");
   if (!userAuth) return;
   const userRef = firestore.doc(`users/${userAuth.uid}`);
 
@@ -42,7 +41,6 @@ export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
 // for google authentication
-
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
 
